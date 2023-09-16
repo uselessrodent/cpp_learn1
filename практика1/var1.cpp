@@ -13,7 +13,7 @@ int main() {
 	SetConsoleOutputCP(1251);
 	int wigth = 80;
 
-	string descr = "ïî äàííûì Gantner Group çà 1999ã.";
+	string descr = "по данным Gantner Group за 1999г.";
 
 	string brand1;
 	string brand2;
@@ -29,17 +29,17 @@ int main() {
 	float market_s3 = 10.00;
 
 	char tmpC1[64];
-	printf("Ââåäèòå ôèðìó 1      êîëè÷åñòâî ïðîäóêòîâ 1      ãîäîâîé îáúåì ïðîäàæ 1      ÷àñòü ðûíêà 1 \n");
+	printf("Введите фирму 1      количество продуктов 1      годовой объем продаж 1      часть рынка 1 \n");
 	scanf_s("%s %d %d %f", tmpC1, 64, &pr_num1, &sales1, &market_s1);
 	brand1 = tmpC1;
 
 	char tmpC2[64];
-	printf("Ââåäèòå ôèðìó 2      êîëè÷åñòâî ïðîäóêòîâ 2      ãîäîâîé îáúåì ïðîäàæ 2      ÷àñòü ðûíêà 2 \n");
+	printf("Введите фирму 2      количество продуктов 2      годовой объем продаж 2      часть рынка 2 \n");
 	scanf_s("%s %d %d %f", tmpC2, 64, &pr_num2, &sales2, &market_s2);
 	brand2 = tmpC2;
 
 	char tmpC3[64];
-	printf("Ââåäèòå ôèðìó 3      êîëè÷åñòâî ïðîäóêòîâ 3      ãîäîâîé îáúåì ïðîäàæ 3      ÷àñòü ðûíêà 3 \n");
+	printf("Введите фирму 3      количество продуктов 3      годовой объем продаж 3      часть рынка 3 \n");
 	scanf_s("%s %d %d %f", tmpC3, 64, &pr_num3, &sales3, &market_s3);
 	brand3 = tmpC3;
 
@@ -47,12 +47,12 @@ int main() {
 	for (int i = 0; i < wigth; i++)
 		printf("-");
 	printf("\n");
-	printf("|Ôèðìû - ïðîèçâîäèòåëè ÑÊÁÄ                                                     |\n");
+	printf("|Фирмы - производители СКБД                                                     |\n");
 	for (int i = 0; i < wigth; i++)
 		printf("-");
 	printf("\n");
 	//       15             25                            25                   15
-	printf("|Ôèðìà         |Êîëè÷åñòâî ïðîäóêòîâ    |Ãîäîâîé îáúåì ïðîäàæ    |×àñòü ðûíêà   |");
+	printf("|Фирма         |Количество продуктов    |Годовой объем продаж    |Часть рынка   |");
 	printf("\n");
 	for (int i = 0; i < wigth; i++)
 		printf("-");
@@ -109,7 +109,7 @@ int main() {
 		printf("-");
 	printf("\n");
 
-	printf("|Ïðèìå÷àíèå: %s", descr.c_str());
+	printf("|Примечание: %s", descr.c_str());
 	for (int i = 0; i < wigth - 14 - descr.size(); i++)
 		printf(" ");
 	printf("|\n");

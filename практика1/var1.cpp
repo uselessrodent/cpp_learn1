@@ -110,7 +110,7 @@ int main() {
 	printf("\n");
 
 	printf("|Примечание: %s", descr.c_str());
-	for (int i = 0; i < wigth - 14 - descr.size(); i++)
+	for (int i = 0; i < wigth - 13 - descr.size(); i++)
 		printf(" ");
 	printf("|\n");
 	for (int i = 0; i < wigth; i++)

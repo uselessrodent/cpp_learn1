@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string>
 
+
 using namespace std;
 
 int main() {
@@ -12,7 +13,7 @@ int main() {
 	SetConsoleOutputCP(1251);
 	int wigth = 80;
 
-	string descr = "по данным Gantner Group за 1999г.";
+	string descr = "ГЇГ® Г¤Г Г­Г­Г»Г¬ Gantner Group Г§Г  1999ГЈ.";
 
 	string brand1;
 	string brand2;
@@ -28,17 +29,17 @@ int main() {
 	float market_s3 = 10.00;
 
 	char tmpC1[64];
-	printf("Введите фирму 1      количество продуктов 1      годовой объем продаж 1      часть рынка 1 \n");
+	printf("Г‚ГўГҐГ¤ГЁГІГҐ ГґГЁГ°Г¬Гі 1      ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЇГ°Г®Г¤ГіГЄГІГ®Гў 1      ГЈГ®Г¤Г®ГўГ®Г© Г®ГЎГєГҐГ¬ ГЇГ°Г®Г¤Г Г¦ 1      Г·Г Г±ГІГј Г°Г»Г­ГЄГ  1 \n");
 	scanf_s("%s %d %d %f", tmpC1, 64, &pr_num1, &sales1, &market_s1);
 	brand1 = tmpC1;
 
 	char tmpC2[64];
-	printf("Введите фирму 2      количество продуктов 2      годовой объем продаж 2      часть рынка 2 \n");
+	printf("Г‚ГўГҐГ¤ГЁГІГҐ ГґГЁГ°Г¬Гі 2      ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЇГ°Г®Г¤ГіГЄГІГ®Гў 2      ГЈГ®Г¤Г®ГўГ®Г© Г®ГЎГєГҐГ¬ ГЇГ°Г®Г¤Г Г¦ 2      Г·Г Г±ГІГј Г°Г»Г­ГЄГ  2 \n");
 	scanf_s("%s %d %d %f", tmpC2, 64, &pr_num2, &sales2, &market_s2);
 	brand2 = tmpC2;
 
 	char tmpC3[64];
-	printf("Введите фирму 3      количество продуктов 3      годовой объем продаж 3      часть рынка 3 \n");
+	printf("Г‚ГўГҐГ¤ГЁГІГҐ ГґГЁГ°Г¬Гі 3      ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЇГ°Г®Г¤ГіГЄГІГ®Гў 3      ГЈГ®Г¤Г®ГўГ®Г© Г®ГЎГєГҐГ¬ ГЇГ°Г®Г¤Г Г¦ 3      Г·Г Г±ГІГј Г°Г»Г­ГЄГ  3 \n");
 	scanf_s("%s %d %d %f", tmpC3, 64, &pr_num3, &sales3, &market_s3);
 	brand3 = tmpC3;
 
@@ -46,12 +47,12 @@ int main() {
 	for (int i = 0; i < wigth; i++)
 		printf("-");
 	printf("\n");
-	printf("|Фирмы - производители СКБД                                                     |\n");
+	printf("|Г”ГЁГ°Г¬Г» - ГЇГ°Г®ГЁГ§ГўГ®Г¤ГЁГІГҐГ«ГЁ Г‘ГЉГЃГ„                                                     |\n");
 	for (int i = 0; i < wigth; i++)
 		printf("-");
 	printf("\n");
 	//       15             25                            25                   15
-	printf("|Фирма         |Количество продуктов    |Годовой объем продаж    |Часть рынка   |");
+	printf("|Г”ГЁГ°Г¬Г          |ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЇГ°Г®Г¤ГіГЄГІГ®Гў    |ГѓГ®Г¤Г®ГўГ®Г© Г®ГЎГєГҐГ¬ ГЇГ°Г®Г¤Г Г¦    |Г—Г Г±ГІГј Г°Г»Г­ГЄГ    |");
 	printf("\n");
 	for (int i = 0; i < wigth; i++)
 		printf("-");
@@ -108,7 +109,7 @@ int main() {
 		printf("-");
 	printf("\n");
 
-	printf("|Примечание: %s", descr.c_str());
+	printf("|ГЏГ°ГЁГ¬ГҐГ·Г Г­ГЁГҐ: %s", descr.c_str());
 	for (int i = 0; i < wigth - 14 - descr.size(); i++)
 		printf(" ");
 	printf("|\n");

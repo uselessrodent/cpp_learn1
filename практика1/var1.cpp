@@ -21,26 +21,26 @@ int main() {
 	int pr_num1 = 1;
 	int pr_num2 = 1;
 	int pr_num3 = 1;
-	int sales1 = 10000;
-	int sales2 = 10000;
-	int sales3 = 10000;
-	float market_s1 = 10.00;
-	float market_s2 = 10.00;
-	float market_s3 = 10.00;
+	unsigned int sales1 = 10000;
+	unsigned int sales2 = 10000;
+	unsigned int sales3 = 10000;
+	float market_s1 = 10.00f;
+	float market_s2 = 10.00f;
+	float market_s3 = 10.00f;
 
 	char tmpC1[64];
 	printf("Введите фирму 1      количество продуктов 1      годовой объем продаж 1      часть рынка 1 \n");
-	scanf_s("%s %d %d %f", tmpC1, 64, &pr_num1, &sales1, &market_s1);
+	scanf_s("%s %d %u %f", tmpC1, 64, &pr_num1, &sales1, &market_s1);
 	brand1 = tmpC1;
 
 	char tmpC2[64];
 	printf("Введите фирму 2      количество продуктов 2      годовой объем продаж 2      часть рынка 2 \n");
-	scanf_s("%s %d %d %f", tmpC2, 64, &pr_num2, &sales2, &market_s2);
+	scanf_s("%s %d %u %f", tmpC2, 64, &pr_num2, &sales2, &market_s2);
 	brand2 = tmpC2;
 
 	char tmpC3[64];
 	printf("Введите фирму 3      количество продуктов 3      годовой объем продаж 3      часть рынка 3 \n");
-	scanf_s("%s %d %d %f", tmpC3, 64, &pr_num3, &sales3, &market_s3);
+	scanf_s("%s %d %u %f", tmpC3, 64, &pr_num3, &sales3, &market_s3);
 	brand3 = tmpC3;
 
 	printf("\n");
@@ -64,7 +64,7 @@ int main() {
 	printf("|%d", pr_num1);
 	for (int i = 0; i < 24 - to_string(pr_num1).length() ; i++)
 		printf(" ");
-	printf("|%d", sales1);
+	printf("|%u", sales1);
 	for (int i = 0; i < 24 - to_string(sales1).length(); i++)
 		printf(" ");
 	printf("|%.2f", market_s1);
@@ -81,7 +81,7 @@ int main() {
 	printf("|%d", pr_num2);
 	for (int i = 0; i < 24 - to_string(pr_num2).length(); i++)
 		printf(" ");
-	printf("|%d", sales2);
+	printf("|%u", sales2);
 	for (int i = 0; i < 24 - to_string(sales2).length(); i++)
 		printf(" ");
 	printf("|%.2f", market_s2);
@@ -98,7 +98,7 @@ int main() {
 	printf("|%d", pr_num3);
 	for (int i = 0; i < 24 - to_string(pr_num3).length(); i++)
 		printf(" ");
-	printf("|%d", sales3);
+	printf("|%u", sales3);
 	for (int i = 0; i < 24 - to_string(sales3).length(); i++)
 		printf(" ");
 	printf("|%.2f", market_s3);
